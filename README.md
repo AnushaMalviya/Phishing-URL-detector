@@ -37,7 +37,7 @@ mvn clean install
 ```
 
 # Running the Application
-<ol>
+<ol type = "1">
   <li>
     Navigate to the project directory if not already there.
   </li>
@@ -81,3 +81,11 @@ http://localhost:8081
 </ul>
 Dependencies are automatically managed through Maven
 
+
+# Screenshot of the project
+
+![Screenshot 2025-04-28 155426](https://github.com/user-attachments/assets/265bac5a-402d-4f32-9bd3-2a0260696809)
+
+![Screenshot 2025-04-28 155325](https://github.com/user-attachments/assets/2a1f1da6-383a-4226-a0ad-1e6b888addd0)
+
+![Screenshot 2025-04-28 155412](https://github.com/user-attachments/assets/2b1b0368-fb53-4d04-b0c2-cfe7b044a2cd)
