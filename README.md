@@ -10,57 +10,74 @@ A simple web application built with Spring Boot and Thymeleaf to detect potentia
 
 <li> Instant result display with clear safe or phishing indication.</li>
 </ul>
-# Prerequisites
+
+# Prerequisites 
 <ul> 
   <li> Java 17 or later </li>
 
   <li> Maven </li>
 
   <li> Spring Boot </li>
+</ul>
 
 # Installation
-Clone the repository
+<ol>
+  <li>Clone the repository</li>
 
-bash
-Copy
-Edit
+```bash
+#clone the repository 
 git clone https://github.com/your-username/phishing-url-detector.git
 cd phishing-url-detector
-Build the project using Maven
+```
+<li> Build the project using Maven</li>
 
-nginx
-Copy
-Edit
+
+```
 mvn clean install
-Running the Application
-Navigate to the project directory if not already there.
+```
 
-Run the application using Maven
+# Running the Application
+<ol>
+  <li>
+    Navigate to the project directory if not already there.
+  </li>
 
-arduino
-Copy
-Edit
+
+
+<li>Run the application using Maven</li> 
+
+
+```
 mvn spring-boot:run
-or by running the main class from your IDE (PhishingUrlDetectorApplication.java).
+```
+or by running the main class from your IDE (`PhishingUrlDetectorApplication.java`).
 
-Open your browser and go to
+  <li>
+  Open your browser and go to
+  </li>
 
-arduino
-Copy
-Edit
-http://localhost:8080/
-Enter a URL and check if it is safe or potentially a phishing link.
+```
+http://localhost:8081
+```
 
-Project Structure
-PhishingController.java - Handles the web requests and phishing detection logic.
+<li> Enter a URL and check if it is safe or potentially a phishing link.</li>
+</ol>
 
-templates/index.html - Form page for URL input.
+# Project Structure
+`PhishingController.java` - Handles the web requests and phishing detection logic.
 
-templates/result.html - Displays the detection result.
+`templates/index.html` - Form page for URL input.
 
-Dependencies Used
-Spring Boot Starter Web
+`templates/result.html` - Displays the detection result.
 
-Spring Boot Starter Thymeleaf
+# Dependencies Used
+<ul>
 
+  
+<li>Spring Boot Starter Web</li>
+  
+
+<li>Spring Boot Starter Thymeleaf</li>
+</ul>
 Dependencies are automatically managed through Maven
+
