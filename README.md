@@ -36,6 +36,7 @@ cd phishing-url-detector
 mvn clean install
 ```
 </ol>
+
 # Running the Application
 <ol type = "1">
   <li>
