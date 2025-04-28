@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Phishing Detection Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .safe {
+            color: green;
+        }
+
+        .phishing {
+            color: red;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Phishing URL Detection Result</h2>
+    <p>URL: <strong th:text="${url}"></strong></p>
+    <p th:if="${isPhishing}" class="phishing"><strong>This URL is potentially a phishing link!</strong></p>
+    <p th:unless="${isPhishing}" class="safe"><strong>This URL appears safe.</strong></p>
+
+    <a href="/">Try another URL</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing URL Detector</title>
+</head>
+<body>
+    <h2>Enter URL to Check</h2>
+    <input type="text" id="urlInput" placeholder="Enter a URL">
+    <button onclick="checkUrl()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkUrl() {
+            const url = document.getElementById("urlInput").value;
+            fetch(`/check?url=${encodeURIComponent(url)}`)
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById("result").innerText = data;
+                });
+        }
+    </script>
+</body>
+</html>
