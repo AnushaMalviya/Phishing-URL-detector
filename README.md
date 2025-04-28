@@ -24,8 +24,8 @@ A simple web application built with Spring Boot and Thymeleaf to detect potentia
 <ol>
   <li>Clone the repository</li>
 
-```bash
-#clone the repository 
+```
+
 git clone https://github.com/your-username/phishing-url-detector.git
 cd phishing-url-detector
 ```
