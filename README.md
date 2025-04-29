@@ -26,7 +26,7 @@ A simple web application built with Spring Boot and Thymeleaf to detect potentia
 
 ```
 
-git clone https://github.com/your-username/phishing-url-detector.git
+git clone https://github.com/AnushaMalviya/phishing-url-detector.git
 cd phishing-url-detector
 ```
 <li> Build the project using Maven</li>
@@ -51,7 +51,7 @@ mvn clean install
 ```
 mvn spring-boot:run
 ```
-or by running the main class from your IDE (`PhishingUrlDetectorApplication.java`).
+or by running the main class from IDE (`PhishingUrlDetectorApplication.java`).
 
   <li>
   Open your browser and go to
